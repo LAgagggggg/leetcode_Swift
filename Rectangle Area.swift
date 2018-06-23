@@ -1,6 +1,6 @@
 class Solution {
     func computeArea(_ A: Int, _ B: Int, _ C: Int, _ D: Int, _ E: Int, _ F: Int, _ G: Int, _ H: Int) -> Int {
-        if E>=A || G<=A || H<=B || F>=D {
+        if E>=C || G<=A || H<=B || F>=D {
         	return ((C-A)*(D-B)+(G-E)*(H-F))
         }
         else {
