@@ -5,11 +5,12 @@ class Solution {
         if length <= 0 {
             return 0
         }
+        var sArr=Array(s.characters)
         var longest=0
         var repeatCheckSet=Set<Character>()
         for i in 0..<length{//以开头的最长不重复字串作为基准值
-            if (!repeatCheckSet.contains(s[s.index(s.startIndex, offsetBy: i)])) {
-                repeatCheckSet.insert(s[s.index(s.startIndex, offsetBy: i)])
+            if (!repeatCheckSet.contains(sArr[i])) {
+                repeatCheckSet.insert(sArr[i])
                 longest+=1
             }
             else {
@@ -21,7 +22,7 @@ class Solution {
             if i+curLongest>=length {
                  break
             }
-            repeatCheckSet.remove(s[s.index(s.startIndex, offsetBy:i-1)])
+            repeatCheckSet.remove(sArr[i-1])
 //            print("-",s[s.index(s.startIndex, offsetBy:i-1)],"---",longest)
             curLongest-=1
             var longestDiff=0
@@ -29,8 +30,8 @@ class Solution {
                 if  (j+curLongest+i>=length){
                     break
                 }
-                if (!repeatCheckSet.contains(s[s.index(s.startIndex, offsetBy: j+curLongest+i)])) {
-                    repeatCheckSet.insert(s[s.index(s.startIndex, offsetBy: j+curLongest+i)])
+                if (!repeatCheckSet.contains(sArr[j+curLongest+i])) {
+                    repeatCheckSet.insert(sArr[j+curLongest+i])
 //                    print("+",s[s.index(s.startIndex, offsetBy: j+curLongest+i)],"---",longest)
                     longestDiff+=1
                 }

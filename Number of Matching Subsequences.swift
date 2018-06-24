@@ -1,45 +1,47 @@
 class Solution {
     func numMatchingSubseq(_ S: String, _ words: [String]) -> Int {
         var cnt=0
+        let sArr=Array(S.utf16)
+        let limit=sArr.count
         for word in words{
-        	var index=S.startIndex
-        	for c:Character in word{
-        		if S[index..<S.endIndex].contains(c) {
-        			index=S[index..<S.endIndex].index(of:c) ?? S.endIndex
-        			index=S[index..<S.endIndex].index(after:index)
-        			// print(String(c)+"---"+S[index..<S.endIndex])
-        		}
-        		else {
-        			cnt-=1
-        			break
-        		}
-        	}
-        	cnt+=1
+            var i=0
+            let wArr=Array(word.utf16)
+            for c in wArr{
+                if let index=sArr[i..<limit].index(of:c) {
+                    i=index+1
+                    // print(String(c)+"---"+S[index..<S.endIndex])
+                }
+                else {
+                    cnt-=1
+                    break
+                }
+            }
+            cnt+=1
         }
-    return cnt
+        return cnt
     }
 }
 // class Solution {
 //     func numMatchingSubseq(_ S: String, _ words: [String]) -> Int {
 //         var cnt=0
 //         for word in words{
-//         	var i=0
-//         	for c:Character in word{
-//         		var judge=false
-//         		for _ in i..<S.count{
-//         			if c==S[S.index(S.startIndex,offsetBy:i)] {
-//         				judge=true
-//         				i+=1
-//         				break
-//         			}
-//         			i+=1
-//         		}
-//         		if !judge {
-//         			cnt-=1
-//         			break
-//         		}
-//         	}
-//         	cnt+=1
+//             var i=0
+//             for c:Character in word{
+//                 var judge=false
+//                 for _ in i..<S.count{
+//                     if c==S[S.index(S.startIndex,offsetBy:i)] {
+//                         judge=true
+//                         i+=1
+//                         break
+//                     }
+//                     i+=1
+//                 }
+//                 if !judge {
+//                     cnt-=1
+//                     break
+//                 }
+//             }
+//             cnt+=1
 //         }
 //     return cnt
 //     }
