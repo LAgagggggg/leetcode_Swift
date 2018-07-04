@@ -11,11 +11,37 @@ class Solution {
             if j != pCnt-1 { isNextStar = pArr[j+1]=="*" ? true:false}
             if isNextStar {// is "*"?
                 let nextRequire:Character? = j+2<pCnt ? pArr[j+2]:nil
+                var backCnt=0
+                if theCharacter==nextRequire && theCharacter != "."{//
+                    while(j+2+backCnt<pCnt && pArr[j+2+backCnt]==theCharacter){
+                        backCnt+=1
+                    }
+                }
+                else if(j+3<pCnt && pArr[j+3]=="*"){
+                    var ignoreCnt=3
+                    while(j+ignoreCnt<pCnt && pArr[j+ignoreCnt]=="*"){
+                        ignoreCnt+=2
+                    }
+                    ignoreCnt-=1
+                    while(j+ignoreCnt+backCnt<pCnt && pArr[j+ignoreCnt+backCnt]==theCharacter){
+                        backCnt+=1
+                    }
+                }
                 if theCharacter != "."{
                     while sArr[i] == theCharacter{
                         i+=1
-                        if !(i<sCnt) {break mainWhile}
+                        if !(i<sCnt) {
+                            if(backCnt>0){
+                                i-=backCnt;
+                                j+=2
+                                continue mainWhile
+                            }
+                            else{
+                                break mainWhile
+                            }
+                        }
                     }
+                    i-=backCnt
                     if sArr[i] != nextRequire && nextRequire != "."{
                         return false
                     }
@@ -69,4 +95,4 @@ class Solution {
 }
 
 let s=Solution()
-print(s.isMatch("ab", ".*c"))
+print(s.isMatch("aaca", "ab*a*c*a"))
