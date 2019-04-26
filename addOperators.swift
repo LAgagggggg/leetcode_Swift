@@ -77,4 +77,4 @@ class Solution {
     }
 }
 
-print(Solution().addOperators("12345678901234567", 99))
+print(Solution().addOperators("123456789", 99))
