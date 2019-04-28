@@ -9,7 +9,7 @@
 import Foundation
 
 class Solution {
-
+    
     func consecutiveNumbersSum(_ N: Int) -> Int {
         //sum=(N0+Nn)*n/2
         let sqrtN=Int(sqrt(Double(N)))
