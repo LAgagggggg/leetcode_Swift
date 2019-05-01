@@ -17,8 +17,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leetcode/main.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="100">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Swift/Collection.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="452" column="36" selection-start-line="452" selection-start-column="36" selection-end-line="452" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -28,9 +37,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>A[index]</find>
+      <find>*</find>
     </findStrings>
     <replaceStrings>
       <replace>str</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -119,12 +130,12 @@
       <workItem from="1555227784692" duration="270000" />
       <workItem from="1555228250954" duration="1111000" />
       <workItem from="1555398424607" duration="27000" />
-      <workItem from="1556329457103" duration="30839000" />
+      <workItem from="1556329457103" duration="33463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32247000" />
+    <option name="totallyTimeSpent" value="34871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1653" y="-135" width="1588" height="1016" extended-state="0" />
@@ -136,7 +147,7 @@
       <window_info id="Favorites" order="3" sideWeight="0.5038002" side_tool="true" weight="0.22536057" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49967846" weight="0.32738853" />
-      <window_info active="true" anchor="bottom" x="589" y="458" width="830" height="340" id="Run" order="2" sideWeight="0.5549806" side_tool="true" visible="true" weight="0.29761904" />
+      <window_info active="true" anchor="bottom" x="589" y="458" width="830" height="340" id="Run" order="2" sideWeight="0.5556274" side_tool="true" visible="true" weight="0.29761904" />
       <window_info anchor="bottom" x="389" y="518" width="980" height="303" id="Debug" order="3" sideWeight="0.48640916" weight="0.3582251" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -144,7 +155,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49733886" weight="0.165038" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49970257" weight="0.20338982" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5123568" side_tool="true" weight="0.12430633" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4450194" weight="0.1969697" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.44437256" weight="0.1969697" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -157,10 +168,17 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Swift/Collection.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="452" column="36" selection-start-line="452" selection-start-column="36" selection-end-line="452" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/main.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="100">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>
