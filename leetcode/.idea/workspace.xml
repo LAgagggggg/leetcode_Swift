@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="849d2624-86c8-4f99-8e35-3fa31dd3a64f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/main.swift" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/main.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/leetcode-bhxnfcbiujzdpaaqhjutcseyiycw/Build/Intermediates.noindex/" />
@@ -17,8 +18,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leetcode/main.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="370">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Foundation/Foundation.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="7919" column="12" selection-start-line="7919" selection-start-column="12" selection-end-line="7919" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Foundation.NSDecimal/Foundation.NSDecimal.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -130,12 +149,20 @@
       <workItem from="1555227784692" duration="270000" />
       <workItem from="1555228250954" duration="1111000" />
       <workItem from="1555398424607" duration="27000" />
-      <workItem from="1556329457103" duration="33463000" />
+      <workItem from="1556329457103" duration="39993000" />
     </task>
+    <task id="LOCAL-00001" summary="working on uniqueLetterString">
+      <created>1556770092935</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556770092935</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34871000" />
+    <option name="totallyTimeSpent" value="41401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1653" y="-135" width="1588" height="1016" extended-state="0" />
@@ -147,15 +174,15 @@
       <window_info id="Favorites" order="3" sideWeight="0.5038002" side_tool="true" weight="0.22536057" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49967846" weight="0.32738853" />
-      <window_info active="true" anchor="bottom" x="589" y="458" width="830" height="340" id="Run" order="2" sideWeight="0.5556274" side_tool="true" visible="true" weight="0.29761904" />
-      <window_info anchor="bottom" x="389" y="518" width="980" height="303" id="Debug" order="3" sideWeight="0.48640916" weight="0.3582251" />
+      <window_info anchor="bottom" x="589" y="458" width="830" height="340" id="Run" order="2" sideWeight="0.5148771" side_tool="true" visible="true" weight="0.3582251" />
+      <window_info active="true" anchor="bottom" x="389" y="518" width="980" height="303" id="Debug" order="3" sideWeight="0.4851229" visible="true" weight="0.3582251" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32890365" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49733886" weight="0.165038" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49970257" weight="0.20338982" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5123568" side_tool="true" weight="0.12430633" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.44437256" weight="0.1969697" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4366106" weight="0.1969697" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -167,6 +194,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="working on uniqueLetterString" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on uniqueLetterString" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Swift/Collection.swift">
       <provider selected="true" editor-type-id="text-editor">
@@ -175,10 +206,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Foundation/Foundation.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7919" column="12" selection-start-line="7919" selection-start-column="12" selection-end-line="7919" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Foundation.NSDecimal/Foundation.NSDecimal.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/main.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="370">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
         </state>
       </provider>
     </entry>
