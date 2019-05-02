@@ -8,72 +8,35 @@
 
 import Foundation
 
-
-public class ListNode {
-    public var val: Int
-    public var next: ListNode?
-
-    public init(_ val: Int) {
-        self.val = val
-        self.next = nil
-    }
-}
-
 class Solution {
-    func nextLargerNodes(_ head: ListNode?) -> [Int] {
-        if head == nil {return []}
-        var result=[Int]()
-        var stack=[(index:Int,value:Int)]()
-        var p=head
-        var i = 0
-        while p != nil{
-            while (!stack.isEmpty && p!.val>stack.last!.value){
-                let item = stack.popLast()!
-                result[item.index]=p!.val
+    func uniqueLetterString(_ S: String) -> Int {
+        if S.count==0 {return 0}
+        let str = Array<Character>(S)
+        var dp = Array(repeating:Array(repeating: (count:0,dict:Dictionary<Character,Int>()), count: str.count + 1), count: S.count)
+        var result=str.count
+        for i in 0..<str.count {
+            dp[i][1].count=1
+            dp[i][1].dict[str[i]]=1
+            var j=2
+            while j<=str.count-i{
+                dp[i][j].dict = dp[i][j - 1].dict
+                switch dp[i][j].dict[str[i+j-1]] {
+                case nil:
+                    dp[i][j].count = dp[i][j - 1].count + 1
+                    dp[i][j].dict[str[i+j-1]]=1
+                case 1:
+                    dp[i][j].count = dp[i][j - 1].count - 1
+                    dp[i][j].dict[str[i+j-1]]=2
+                default:
+                    dp[i][j].count = dp[i][j - 1].count
+                }
+                result+=dp[i][j].count
+                j+=1
             }
-            stack.append((i,p!.val))
-            result.append(0)
-            p=p?.next
-            i+=1
         }
         return result
     }
 }
 
-//class Solution {
-//    func nextLargerNodes(_ head: ListNode?) -> [Int] {
-//        if head == nil {return []}
-//        var result=[Int]()
-//        var p=head
-//        while p != nil{
-//            result.append(p!.val)
-//            p=p?.next
-//        }
-//        var modified:[Bool]=Array(repeating: false, count: result.count)
-//        var lastNotModified=0
-//        for i in 1..<result.count {
-//            for j in lastNotModified..<i{
-//                if !modified[j] && result[i]>result[j]{
-//                    result[j]=result[i]
-//                    modified[j]=true
-//                    if j==lastNotModified {lastNotModified+=1}
-//                }
-//            }
-//        }
-//        for i in lastNotModified..<modified.count{
-//            if !modified[i]{
-//                result[i]=0
-//            }
-//        }
-//        return result
-//    }
-//}
-
-
-var head=ListNode(2)
-head.next=ListNode(7)
-head.next?.next=ListNode(4)
-head.next?.next?.next=ListNode(3)
-head.next?.next?.next?.next=ListNode(5)
-print(Solution().nextLargerNodes(head))
+print(Solution().uniqueLetterString("ABC"))
 
