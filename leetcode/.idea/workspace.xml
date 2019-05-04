@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leetcode/main.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="111">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -27,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Foundation/Foundation.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="116250">
               <caret line="7919" column="12" selection-start-line="7919" selection-start-column="12" selection-end-line="7919" selection-end-column="12" />
             </state>
           </provider>
@@ -36,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Foundation.NSDecimal/Foundation.NSDecimal.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="585">
               <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
             </state>
           </provider>
@@ -45,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Swift/Collection.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="6780">
               <caret line="452" column="36" selection-start-line="452" selection-start-column="36" selection-end-line="452" selection-end-column="36" />
             </state>
           </provider>
@@ -149,7 +149,8 @@
       <workItem from="1555227784692" duration="270000" />
       <workItem from="1555228250954" duration="1111000" />
       <workItem from="1555398424607" duration="27000" />
-      <workItem from="1556329457103" duration="39993000" />
+      <workItem from="1556329457103" duration="41535000" />
+      <workItem from="1556855976563" duration="3642000" />
     </task>
     <task id="LOCAL-00001" summary="working on uniqueLetterString">
       <created>1556770092935</created>
@@ -162,27 +163,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41401000" />
+    <option name="totallyTimeSpent" value="46585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1653" y="-135" width="1588" height="1016" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5422627" visible="true" weight="0.16170764" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5422627" visible="true" weight="0.16364813" />
       <window_info auto_hide="true" id="Structure" order="1" sideWeight="0.45773733" side_tool="true" weight="0.1827321" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5038002" side_tool="true" weight="0.22536057" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49967846" weight="0.32738853" />
-      <window_info anchor="bottom" x="589" y="458" width="830" height="340" id="Run" order="2" sideWeight="0.5148771" side_tool="true" visible="true" weight="0.3582251" />
-      <window_info active="true" anchor="bottom" x="389" y="518" width="980" height="303" id="Debug" order="3" sideWeight="0.4851229" visible="true" weight="0.3582251" />
+      <window_info anchor="bottom" x="589" y="458" width="830" height="340" id="Run" order="2" sideWeight="0.51617074" side_tool="true" visible="true" weight="0.3582251" />
+      <window_info active="true" anchor="bottom" x="389" y="518" width="980" height="303" id="Debug" order="3" sideWeight="0.48382923" visible="true" weight="0.3582251" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32890365" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49733886" weight="0.165038" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49970257" weight="0.20338982" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5123568" side_tool="true" weight="0.12430633" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4366106" weight="0.1969697" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4573092" weight="0.1969697" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -199,31 +200,31 @@
     <option name="LAST_COMMIT_MESSAGE" value="working on uniqueLetterString" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Swift/Collection.swift">
+    <entry file="file://$PROJECT_DIR$/leetcode/main.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="452" column="36" selection-start-line="452" selection-start-column="36" selection-end-line="452" selection-end-column="36" />
+        <state relative-caret-position="111">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Foundation/Foundation.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="116250">
           <caret line="7919" column="12" selection-start-line="7919" selection-start-column="12" selection-end-line="7919" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Foundation.NSDecimal/Foundation.NSDecimal.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="585">
           <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/main.swift">
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E125.zip!/5.0/x86_64/macosx10.14/Swift/Collection.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        <state relative-caret-position="6780">
+          <caret line="452" column="36" selection-start-line="452" selection-start-column="36" selection-end-line="452" selection-end-column="36" />
         </state>
       </provider>
     </entry>
