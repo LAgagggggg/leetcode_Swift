@@ -1,40 +1,44 @@
-//
-//  main.swift
-//  leetcode
-//
-//  Created by LAgagggggg on 2019/3/18.
-//  Copyright © 2019 nil. All rights reserved.
-//
-
-import Foundation
-
 class Solution {
-    func minDominoRotations(_ A: [Int], _ B: [Int]) -> Int {
-        let N = A.count
-        var count = Array<(A: Int, B: Int, DUP: Int)>(repeating: (A: 0, B: 0, DUP: 0), count: 7)
-        for i in 0..<N {
-            if A[i] == B[i] {
-                count[A[i]].DUP += 1
-            }
-            count[B[i]].B += 1
-            count[A[i]].A += 1
+    func accountsMerge(_ accounts: [[String]]) -> [[String]] {
+        if accounts.count == 0 {
+            return []
         }
-        var minSwap = N + 1
-        for i in 1...6 {
-            if count[i].A + count[i].B - count[i].DUP >= N {
-                let minValue=min(count[i].A, count[i].B) - count[i].DUP
-                if minSwap > minValue  {
-                    minSwap = minValue
+        var resultSet = Array<(name: String, emails:Set<String>)>()
+        
+        for account in accounts {
+            let emails = account[1...]
+            var notContain = true
+            let emailSet = Set(emails)
+            var lastTriggerSet = -1
+            var i = 0
+            while i < resultSet.count {
+                var set = resultSet[i]
+                if set.emails.intersection(emailSet).count > 0 {
+                    notContain = false
+                    if lastTriggerSet == -1 { // First set contain same email
+                        lastTriggerSet = i
+                        resultSet[i].emails = set.emails.union(emailSet)
+                    }
+                    else { // More set hit
+                        resultSet[lastTriggerSet].emails = resultSet[lastTriggerSet].emails.union(resultSet[i].emails)
+                        resultSet.remove(at: i)
+                        i -= 1
+                    }
                 }
+                i += 1
+            }
+            if notContain {
+                resultSet.append((name: account[0], emails: emailSet))
             }
         }
-        if minSwap == N + 1 {
-            return -1
+        let result = resultSet.map { (arg: (name: String, emails: Set<String>)) -> [String] in
+            let (name, emails) = arg
+            var result = [name]
+            result.append(contentsOf: emails.sorted())
+            return result
         }
-        return minSwap
+        return result
     }
 }
 
-print(Solution().minDominoRotations([2,1,2,4,2,2], [5,2,6,2,3,2]))
-print(Solution().minDominoRotations([1, 2, 1, 1, 1, 2, 2, 2], [2, 1, 2, 2, 2, 2, 2, 2]))
-print(Solution().minDominoRotations([3, 5, 1, 2, 3], [3, 6, 3, 3, 4]))
+print(Solution().accountsMerge([["John", "johnsmith@mail.com", "john00@mail.com"], ["John", "johnnybravo@mail.com"], ["John", "johnsmith@mail.com", "john_newyork@mail.com"], ["Mary", "mary@mail.com"]]))
